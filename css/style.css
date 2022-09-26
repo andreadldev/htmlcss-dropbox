@@ -38,6 +38,20 @@
     text-decoration: underline;
 }
 
+.btn.light {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.btn.light a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn.light:hover {
+    text-decoration: underline;
+}
+
 .header-nav button {
     position: relative;
     top: -5px;
@@ -139,8 +153,8 @@
 
 /* --------------MAIN-------------- */
 
-/* COLONNE */
-section {
+/* SEZIONE COLONNE */
+section:nth-child(1) {
     padding: 130px 0;
     font-size: 14px;
 }
@@ -213,4 +227,48 @@ section .col-content h3 {
 
 .col-content .checklist i {
     color: #0061ff;
+}
+
+.col.big {
+    width: 100%;
+    margin-top: 45px;
+}
+
+.col.big .col-content {
+    position: relative;
+}
+
+.col.big .btn {
+    width: 25%;
+    position: absolute;
+    top: 30px;
+    right: 35px;
+}
+
+.col.big .col-content span {
+    display: inline-block;
+    width: 65%;
+}
+
+/* SEZIONE PARTNER */
+section:nth-child(2) {
+    width: 100%;
+    display: flex;
+}
+
+section:nth-child(2) h3 {
+    font-size: 24px;
+}
+
+section:nth-child(2) img {
+    width: 60%;
+}
+
+section:nth-child(2) .info-box {
+    padding: 30px 55px;
+    width: 40%;
+}
+
+section:nth-child(2) .info-box * {
+    margin: 20px 0;
 }
