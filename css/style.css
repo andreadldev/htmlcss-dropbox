@@ -155,7 +155,7 @@
 
 /* SEZIONE COLONNE */
 section:nth-child(1) {
-    padding: 130px 0;
+    padding-top: 130px;
     font-size: 14px;
 }
 
@@ -250,10 +250,11 @@ section .col-content h3 {
     width: 65%;
 }
 
-/* SEZIONE PARTNER */
+/* SEZIONE 2 - PARTNER */
 section:nth-child(2) {
     width: 100%;
     display: flex;
+    margin: 140px auto;
 }
 
 section:nth-child(2) h3 {
@@ -272,3 +273,35 @@ section:nth-child(2) .info-box {
 section:nth-child(2) .info-box * {
     margin: 20px 0;
 }
+
+/* SEZIONE 3 - DROPBOX BUSINESS */
+section:nth-child(3) .col {
+    min-height: 300px;
+    border: none;
+    margin: 30px 0;
+}
+
+section:nth-child(3) img {
+    width: 100%;
+}
+
+section:nth-child(3) h2 {
+    margin-bottom: 30px;
+}
+
+section:nth-child(3) h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+/* SEZIONE 4: SCOPRI DI PIU' */
+
+section:nth-child(4) {
+    margin: 100px auto;
+}
+
+section:nth-child(4) h2 {
+    margin: 70px 0;
+}
+
+/* SEZIONE 5: LAYOUT QUADRATI */
