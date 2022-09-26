@@ -12,11 +12,16 @@
     margin: auto;
 }
 
+.container-sm {
+    max-width: 1050px;
+    margin: auto;
+}
+
 /* -------------BUTTONS------------- */
 
 .btn {
     border: none;
-    padding: 6px 0;
+    padding: 10px 10px;
     font-size: 15px;
 }
 
@@ -38,8 +43,8 @@
     top: -5px;
 }
 
-.header-hero button {
-    padding: 10px 10px;
+.header-nav button {
+    padding: 6px 0;
 }
 
 /* -------------HEADER------------- */
@@ -118,10 +123,10 @@
 }
 
 .header-hero-inner img {
-    width: 60%;
+    width: 65%;
     position: absolute;
     top: 0;
-    right: 60px;
+    right: -15px;
 }
 
 .header-hero-inner i {
@@ -130,4 +135,82 @@
     font-size: 50px;
     bottom: -80px;
     left: 0;
+}
+
+/* --------------MAIN-------------- */
+
+/* COLONNE */
+section {
+    padding: 130px 0;
+    font-size: 14px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+.checkbox {
+    position: relative;
+    left: -25px;
+}
+
+.checkbox input{
+    position: relative;
+    margin: 70px 15px;
+    left: 11px;
+}
+
+section .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+section .col {
+    width: calc(100%/3 - 25px);
+    border: 1px solid lightgray;
+}
+
+section .col-header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+section .col span i {
+    position: relative;
+    left: -3px;
+}
+
+section .col-content {
+    padding: 30px 35px;
+}
+
+section .col-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.col ul {
+    list-style: none;
+    padding: 40px 0;
+}
+
+.col ul li {
+    padding: 10px 0;
+}
+
+.col button {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.col hr {
+    margin: 45px 0;
+    width: 20%;
+}
+
+.col-content .checklist i {
+    color: #0061ff;
 }
