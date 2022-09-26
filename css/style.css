@@ -305,3 +305,65 @@ section:nth-child(4) h2 {
 }
 
 /* SEZIONE 5: LAYOUT QUADRATI */
+.block-layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block {
+    width: calc(100%/3);
+    min-height: 320px;
+}
+
+.block img {
+    width: 50%;
+}
+
+.block.left, .block.right {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block.left .block, .block.right .block {
+    width: calc(100%/2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* #ff1c1c */
+.block.center {
+    background-color: #f5f5f5;
+}
+
+.block.left > .block:nth-child(1) {
+    background-color: #a2d39b;
+    border: 15px solid #d1e9cd;
+}
+
+.block.left > .block:nth-child(2) {
+    background-color: #61082b;
+}
+
+.block.left > .block:nth-child(3) {
+    background-color: #0093ce;
+}
+
+.block.left > .block:nth-child(4) {
+    background-color: #ff1c1c;
+}
+
+.block.right > .block:nth-child(1) {
+    background-color: #d5001f;
+}
+
+.block.right > .block:nth-child(2) {
+    background-color: #b4d0e7;
+}
+
+.block.right > .block:nth-child(3) {
+    background-color: #0d2481;
+}
+
+.block.right > .block:nth-child(4) {
+    background-color: #ffd830;
+}
