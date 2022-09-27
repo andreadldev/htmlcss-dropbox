@@ -14,6 +14,18 @@
     max-width: 1050px;
     margin: auto;
 }
+/* ------------TYPOGRAPHY------------ */
+h1 {
+    font-size: 76px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
 
 /* -------------BUTTONS------------- */
 
@@ -120,7 +132,6 @@
 }
 
 .header-hero-inner h1{
-    font-size: 76px;
     padding-top: 80px;
 }
 
@@ -157,10 +168,6 @@ section:nth-child(1) {
     font-size: 14px;
 }
 
-section h2 {
-    font-size: 32px;
-}
-
 .checkbox {
     position: relative;
     left: -25px;
@@ -172,7 +179,7 @@ section h2 {
     left: 11px;
 }
 
-section .row {
+.row {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -200,7 +207,6 @@ section .col-content {
 }
 
 section .col-content h3 {
-    font-size: 24px;
     margin-bottom: 20px;
 }
 
@@ -274,10 +280,6 @@ section:nth-child(2) {
     margin: 140px auto;
 }
 
-section:nth-child(2) h3 {
-    font-size: 24px;
-}
-
 section:nth-child(2) img {
     width: 60%;
 }
@@ -307,7 +309,6 @@ section:nth-child(3) h2 {
 }
 
 section:nth-child(3) h3 {
-    font-size: 22px;
     margin-bottom: 30px;
 }
 
@@ -407,7 +408,6 @@ section:nth-child(6) {
 }
 
 .section-block h2 {
-    font-size: 36px;
     color: #61082b;
 }
 
@@ -446,4 +446,41 @@ section:nth-child(7) h2 {
 .faq i {
     margin-right: 50px;
     font-size: small;
+}
+
+/* -------------FOOTER------------- */
+
+footer {
+    min-height: 570px;
+    background-color: black;
+    padding-top: 100px;
+}
+
+footer h3 {
+    color: white;
+}
+
+footer li {
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer hr {
+    width: 80% !important;
+}
+
+footer span {
+    color: #999999;
+}
+
+footer span * {
+    padding-right: 10px;
 }
