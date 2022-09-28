@@ -90,6 +90,7 @@ h3 {
     left: 0;
     right: 0;
     z-index: 10;
+    box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 20%);
 }
 
 .header-nav ul {
@@ -437,8 +438,6 @@ section:nth-child(7) h2 {
     border-top: 1px solid #999999;
     position: relative;
     width: 100%;
-    /* background-color: beige; */
-    cursor: pointer;
 }
 
 .faq:last-child {
@@ -453,8 +452,7 @@ section:nth-child(7) h2 {
     right: 0;
 }
 
-
-.faq input {
+.faq i, .faq input {
     cursor: pointer;
 }
 
@@ -468,12 +466,10 @@ section:nth-child(7) h2 {
     height:0px;
     overflow: hidden;
     transition: height .4s ease;
-    z-index: 20;
 }
 
 .slide p {
     padding: 30px;
-    z-index: 10;
     cursor: text;
 }
 
@@ -484,7 +480,6 @@ section:nth-child(7) h2 {
     color: black;
     font-weight: bold;
     text-decoration-color: lightgray;
-    z-index: 10;
 }
 
 .slide p a:hover {
@@ -495,15 +490,45 @@ section:nth-child(7) h2 {
 #touch-2,
 #touch-3 {
     position: absolute; 
-    opacity: 0; 
-    height: 0px;
+    opacity: 1; 
+    height: 0;
     display: block;
     top: 0;
     left: 0;
     width: 100%;
-    height: 110px;
-    z-index: 0;
-}    
+    height: 125px;
+    /* z-index: -1; */
+    background: transparent;
+    appearance: none;
+}
+
+ #touch-1:hover:after,
+#touch-2:hover:after,
+#touch-3:hover:after  {
+    content: "";
+    display: block;
+    height: 98%;
+    width: 100%;
+    background-color: #f3f0eb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: height .4s ease;
+} 
+
+#touch-1:checked:after,
+#touch-2:checked:after,
+#touch-3:checked:after  {
+    background-color: white;
+    height: 290px;
+}  
+
+#touch-1:checked,
+#touch-2:checked,
+#touch-3:checked {
+    height: 100px;
+}
 
 #touch-1:checked ~ .slide, 
 #touch-2:checked ~ .slide,
@@ -511,9 +536,9 @@ section:nth-child(7) h2 {
     height: 170px;
 } 
 
-#touch-1:checked + .chevron,
-#touch-2:checked + .chevron,
-#touch-3:checked + .chevron {
+#touch-1:checked ~ .chevron,
+#touch-2:checked ~ .chevron,
+#touch-3:checked ~ .chevron {
     transform: rotate(180deg);
 }
 
@@ -547,8 +572,9 @@ footer hr {
     width: 80% !important;
 }
 
-footer span {
+footer span, footer span a {
     color: #999999;
+    cursor: pointer;
 }
 
 footer span * {
