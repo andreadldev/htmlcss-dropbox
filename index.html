@@ -55,8 +55,11 @@
         <section class="container-sm">
             <h2>Trova il piano business che fa per te</h2>
             <div class="checkbox">
-                <input type="radio">Fatturazione mensile
-                <input type="radio">Fatturazione annuale
+                <input type="radio" name="same" id="radio-1" checked="checked">
+                <label for="radio-1">Fatturazione mensile</label>
+
+                <input type="radio" name="same" id="radio-2">
+                <label for="radio-2">Fatturazione annuale</label>
             </div>
             <div class="row">
                 <!-- COLONNA 1 -->
@@ -67,8 +70,10 @@
                     <div class="col-content">
                         <p>
                             <h3>Professional</h3>
-                            <strong> €12.00</strong> <br> <br>
-                            /mese <br>
+                            <div class="col-info">
+                                <strong> € 12.00</strong> <br> <br>
+                                <span class="col-charge">/mese</span> <br>
+                            </div>
                             <ul>
                                 <div class="checklist-line">
                                     <i class="fa-solid fa-user"></i><li> 1 utente</li>
@@ -77,13 +82,13 @@
                                     <i class="fa-solid fa-folder"></i> <li>5 TB di spazio di archiviazione sicuro</li>
                                 </div>
                                 <div class="checklist-line">
-                                    <i class="fa-sharp fa-solid fa-share-nodes"></i> <li>Funzioni di produttività premium e condivisione file semplice e sicura <br><br></li>
+                                    <i class="fa-sharp fa-solid fa-share-nodes"></i> <li>Funzioni di produttività premium e condivisione file semplice e sicura <br></li>
                                 </div>
                             </ul>
                             <button class="btn primary"> <a href="#">Prova gratis per 30 giorni</a> </button>
                             <span>oppure <a href="#">acquista ora</a></span>
-                            <hr>
                         </p>
+                        <hr>
                         <p>
                             <h4>Punti salienti del piano</h4>
                             <ul class="checklist">
@@ -105,8 +110,10 @@
                     <div class="col-content">
                         <p>
                             <h3>Advanced</h3>
-                            <strong> €18.00</strong> <br> <br>
-                            /utente/mese <br>
+                            <div class="col-info">
+                                <strong> € 18.00</strong> <br> <br>
+                                <span class="col-charge">/utente/mese</span> <br>
+                            </div>
                             <ul>
                                 <div class="checklist-line">
                                     <i class="fa-solid fa-users"></i><li>3 o più utenti</li>
@@ -120,8 +127,8 @@
                             </ul>
                             <button class="btn primary"> <a href="#">Prova gratis per 30 giorni</a> </button>
                             <span>oppure <a href="#">acquista ora</a></span>
-                            <hr>
                         </p>
+                        <hr>
                         <p>
                             <h4>Punti salienti del piano</h4>
                             <ul class="checklist">
@@ -152,8 +159,10 @@
                     <div class="col-content">
                         <p>
                             <h3>Enterprise</h3>
-                            <strong> Contattaci</strong> <br> <br>
-                            - <br>
+                            <div class="col-info">
+                                <strong> Contattaci</strong> <br> <br>
+                                <span class="col-charge">-</span> <br>
+                            </div>
                             <ul>
                                 <div class="checklist-line">
                                     <i class="fa-solid fa-users"></i><li>10 o più utenti</li>
@@ -167,8 +176,8 @@
                             </ul>
                             <button class="btn primary"> <a href="#">Prova gratis per 30 giorni</a> </button>
                             <span>oppure <a href="#">acquista ora</a></span>
-                            <hr>
                         </p>
+                        <hr>
                         <p>
                             <h4>Punti salienti del piano</h4>
                             <ul class="checklist">
@@ -321,8 +330,9 @@
                     <i class="chevron fa-solid fa-chevron-down"></i>
                     <div class="slide">
                         <p>
+                            <span>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, consectetur vitae aperiam exercitationem repellendus mollitia corrupti. Fugit nesciunt possimus voluptates architecto, cumque soluta suscipit sequi deleniti sit tempora. Nam quasi assumenda illo tempore magni earum sit, dolores omnis nesciunt vitae.
-                            
+                            </span>
                             <a href="#">Ulteriori informazioni</a>
                         </p>
                     </div>          
