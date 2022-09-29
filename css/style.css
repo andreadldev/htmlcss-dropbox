@@ -186,10 +186,15 @@ section:nth-child(1) {
     display: none;
 }
 
+.checkbox span {
+    position: relative;
+    left: 25px;
+}
+
 .checkbox input:hover + label:before {
-    height: 14px;
-    width: 14px;
-    border: 3px solid #d0d0d3;
+    height: 10px;
+    width: 10px;
+    border: 5px solid #d0d0d3;
     background-color: white;
 }
 
@@ -214,6 +219,7 @@ section:nth-child(1) {
     border: 1.5px solid #d0d0d3;
     border-radius: 50%;
     margin-right: 5px;
+    position: absolute;
 }
 
 /* SEZIONE COLONNE */
